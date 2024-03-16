@@ -3,7 +3,7 @@
 const Banner = () => {
     return (
         <div>
-            <div className="h-full w-full rounded-3xl p-5 md:p-8 lg:p-28 xl:p-40 flex justify-center items-center bg-cover bg-no-repeat bg-center bg-gradient-to-r from-rgba-21-11-43-90 to-transparent" style={{backgroundImage: "url('./src/components/Banner/banner.png')"}}>
+            <div className="h-full w-full rounded-3xl p-5 md:p-8 lg:p-28 xl:p-40 flex justify-center items-center bg-cover bg-no-repeat bg-center bg-gradient-to-r from-rgba-21-11-43-90 to-transparent" style={{backgroundImage: "url('https://i.ibb.co/fDFPb57/banner.png')"}}>
                    <div className="flex flex-col items-center text-center">
                         <h1 className="text-xl md:text-3xl lg:text-5xl text-white text-wrap lg:leading-[76px] max-w-[870px]">Discover an exceptional cooking class  tailored for you!</h1>
                         <p className="text-sm md:text-base lg:text-lg text-white max-w-[933px] mt-6">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
