@@ -5,7 +5,7 @@ import { IoReorderThree } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <div className="container mx-auto py-5 md:py-8 lg:py-12 px-5 md:px-8 lg:px-10 xl:px-12">
+        <div className="py-5 md:py-8 lg:py-12">
            <div className="flex items-center justify-between gap-4 md:gap-6">
                <div className="text-3xl lg:hidden">
                    <IoReorderThree />
