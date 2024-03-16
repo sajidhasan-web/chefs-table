@@ -5,7 +5,7 @@
       "img": "https://i.ibb.co/ftsC7Sb/chicken-stir-fry.jpg",
       "short_description": "A delicious and easy-to-make chicken stir-fry.",
       "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom"],
-      "preparing_time": "30 min",
+      "preparing_time": "30",
       "calories": "320 calories"
     },
     {
@@ -14,7 +14,7 @@
       "img": "https://i.ibb.co/bbZtX7H/Vegetable-Curry.jpg",
       "short_description": "A flavorful vegetarian curry loaded with vegetables.",
       "ingredients": ["500 g mixed vegetables", "300 ml coconut milk", "1 tbsp curry powder", "200 g tofu"],
-      "preparing_time": "45 min",
+      "preparing_time": "45",
       "calories": "250 calories"
     },
     {
@@ -23,7 +23,7 @@
       "img": "https://i.ibb.co/ftmnFhT/Spaghetti-Carbonara.jpg",
       "short_description": "Classic Italian pasta dish with creamy sauce and bacon.",
       "ingredients": ["400 g spaghetti", "150 g pancetta", "3 eggs", "100 g grated Parmesan cheese"],
-      "preparing_time": "25 min",
+      "preparing_time": "25",
       "calories": "450 calories"
     },
     {
@@ -32,7 +32,7 @@
       "img": "https://i.ibb.co/ncrbcmF/Mango-Salsa-Chicken.jpg",
       "short_description": "Grilled chicken topped with fresh mango salsa.",
       "ingredients": ["4 chicken breasts", "2 mangoes", "1 red bell pepper", "1 red onion"],
-      "preparing_time": "35 min",
+      "preparing_time": "35",
       "calories": "280 calories"
     },
     {
@@ -41,7 +41,7 @@
       "img": "https://i.ibb.co/DKBSkqY/Quinoa-Salad.jpg",
       "short_description": "Healthy and colorful salad made with quinoa and vegetables.",
       "ingredients": ["250 g cooked quinoa", "1 cucumber", "1 bell pepper", "100 g cherry tomatoes"],
-      "preparing_time": "20 min",
+      "preparing_time": "20",
       "calories": "200 calories"
     },
     {
@@ -50,7 +50,7 @@
       "img": "https://i.ibb.co/c88rHQ2/Banana-Bread.jpg",
       "short_description": "Moist and delicious banana bread perfect for breakfast or snack.",
       "ingredients": ["3 ripe bananas", "200 g flour", "100 g sugar", "100 ml vegetable oil"],
-      "preparing_time": "50 min",
+      "preparing_time": "50",
       "calories": "180 calories"
     }
   ]
