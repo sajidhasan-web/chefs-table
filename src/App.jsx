@@ -9,9 +9,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
+const [recipes, setRecipes] = useState([])
+const [wantToCook, setWantToCook] =useState([])
+const [cooking, setCooking] =useState([])
 
-  const [recipes, setRecipes] = useState([])
-  const [wantToCook, setWantToCook] =useState([])
+
+
+console.log(cooking);
+ 
+
 
   useEffect(()=>{
     fetch('./recipesData.json')
@@ -19,11 +25,11 @@ function App() {
     .then(data => setRecipes(data))
   },[])
 
-   
+
 //  toast func
  const notify = () => toast("This recipe is already exist!");
 
- 
+
   const handleWantToCook =(recipe, recipe_id) =>{
     const isExist = wantToCook.find(recipe => recipe.recipe_id == recipe_id)
     if(!isExist){
@@ -31,6 +37,12 @@ function App() {
     }else{
       notify()
     }
+  }
+
+  const handlePreparing = (p, id) =>{
+    const filter = wantToCook.filter( item => item.recipe_id !== id)  
+     setWantToCook(filter)
+     setCooking([...cooking, p])
   }
 
   
@@ -47,7 +59,7 @@ function App() {
           </div>
           <div className="w-full mt-8 lg:mt-12 grid gap-6 grid-cols-1 lg:grid-cols-12">
                   <Recipes recipes={recipes} handleWantToCook={handleWantToCook}></Recipes>
-                  <Cook wantToCook={wantToCook}></Cook>
+                  <Cook wantToCook={wantToCook} handlePreparing={handlePreparing} cooking={cooking}></Cook>
           </div>
           <ToastContainer />
     </div>

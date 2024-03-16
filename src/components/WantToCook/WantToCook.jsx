@@ -2,7 +2,7 @@
 import WantToCookList from "../WantToCookList/WantToCookList";
 
 
-const WantToCook = ({wantToCook}) => {
+const WantToCook = ({wantToCook, handlePreparing}) => {
 
  
 
@@ -26,7 +26,7 @@ const WantToCook = ({wantToCook}) => {
 
                        
                       {
-                        wantToCook.map((p, idx) => <WantToCookList key={idx} idx={idx} p={p}></WantToCookList>)
+                        wantToCook.map((p, idx) => <WantToCookList key={idx} idx={idx} p={p} handlePreparing={handlePreparing}></WantToCookList>)
                       }
 
                         
