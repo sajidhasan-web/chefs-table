@@ -3,6 +3,10 @@ import CookingList from "../CookingList/CookingList";
 
 const Cooking = ({cooking}) => {
 
+    const totalTime = cooking.reduce((p, c )=> p + parseFloat(c.preparing_time), 0)
+    const totalCal = cooking.reduce((p, c )=> p + parseFloat(c.calories), 0)
+    console.log(typeof totalTime);
+
     // console.log(cooking)
     return (
         <div>
@@ -14,20 +18,28 @@ const Cooking = ({cooking}) => {
              <table className="table-auto fira">
                     <thead className="w-full text-[#878787] font-medium">
                         <tr>
-                            <th className="px-2 xl:px-12"></th>
-                            <th className="px-2 xl:px-12">Name</th>
-                            <th className="px-2 xl:px-12">Time</th>
-                            <th className="px-2 xl:px-12">Calories</th>
+                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12"></th>
+                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12">Name</th>
+                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12">Time</th>
+                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12">Calories</th>
                         </tr>
                     </thead>
                     <tbody className="w-full">
 
                      {
-                        cooking.map( (item, idx) => <CookingList key={idx} item={item}></CookingList>)
+                        cooking.map( (item, idx) => <CookingList key={idx} idx={idx} item={item}></CookingList>)
                      }   
                         
                     </tbody>
-                </table>    
+                </table>  
+                <div className="flex justify-end mr-6 mt-6">
+                     <div className="flex gap-4 text-[#282828CC] font-medium">
+                        <p>Total Time =  <br /> <span>{totalTime}</span> minutes</p>
+                        <p>Total Calories = <br /><span>{totalCal}</span> calories </p>
+                     </div>
+
+                </div>
+
             </div>     
         </div>
     );

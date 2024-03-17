@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Recipes from "./components/Recipes/Recipes"
 import Cook from "./components/Cook/Cook"
 import { useEffect, useState } from "react"
-// toast
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -26,8 +26,8 @@ console.log(cooking);
   },[])
 
 
-//  toast func
- const notify = () => toast("This recipe is already exist!");
+ const notify1 = () => toast("This recipe is already exist!");
+ const notify2 = () => toast("It's already cooking now!");
 
 
   const handleWantToCook =(recipe, recipe_id) =>{
@@ -35,14 +35,19 @@ console.log(cooking);
     if(!isExist){
       setWantToCook([...wantToCook, recipe])
     }else{
-      notify()
+      notify1()
     }
   }
 
   const handlePreparing = (p, id) =>{
     const filter = wantToCook.filter( item => item.recipe_id !== id)  
      setWantToCook(filter)
-     setCooking([...cooking, p])
+     const isExist = cooking.find(item => item.recipe_id == id)
+     if(!isExist){
+       setCooking([...cooking, p])
+     }else{
+      notify2()
+     }
   }
 
   
@@ -50,7 +55,7 @@ console.log(cooking);
 
 
   return (
-    <div className="container mx-auto px-8 md:px-10 lg:px-12">
+    <div className="container mx-auto px-5 md:px-8 lg:px-10 xl:px-12">
           <Navbar></Navbar>
           <Banner></Banner>
           <div className="mt-8 md:mt-12">
@@ -61,7 +66,7 @@ console.log(cooking);
                   <Recipes recipes={recipes} handleWantToCook={handleWantToCook}></Recipes>
                   <Cook wantToCook={wantToCook} handlePreparing={handlePreparing} cooking={cooking}></Cook>
           </div>
-          <ToastContainer />
+          <ToastContainer/> 
     </div>
   )
 }
