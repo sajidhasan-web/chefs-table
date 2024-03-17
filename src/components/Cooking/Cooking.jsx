@@ -18,10 +18,10 @@ const Cooking = ({cooking}) => {
              <table className="table-auto fira">
                     <thead className="w-full text-[#878787] font-medium">
                         <tr>
-                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12"></th>
-                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12">Name</th>
-                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12">Time</th>
-                            <th className=" lg:px-7 xl:px-[42px] 2xl:px-12">Calories</th>
+                            <th className="px-4 md:px-8 lg:px-9 xl:px-[42px] 2xl:px-12"></th>
+                            <th className="px-4 md:px-8 lg:px-9 xl:px-[42px] 2xl:px-12">Name</th>
+                            <th className="px-4 md:px-8 lg:px-9 xl:px-[42px] 2xl:px-12">Time</th>
+                            <th className="px-4 md:px-8 lg:px-9 xl:px-[42px] 2xl:px-12">Calories</th>
                         </tr>
                     </thead>
                     <tbody className="w-full">
