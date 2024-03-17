@@ -10,7 +10,7 @@ const Navbar = () => {
                <div className="text-3xl lg:hidden">
                    <IoReorderThree />
                </div>
-              <div className="text-2xl md:text-3xl font-bold text-[#150B2B]">Recipe Calories</div>
+              <div className="text-xl lg:text-2xl xl:text-3xl font-bold text-[#150B2B]">CulinaryGeniusHub</div>
                 <ul className="text-[#150B2BB3] lg:flex gap-12 hidden">
                   <li>Home</li>
                   <li>Recipes</li>

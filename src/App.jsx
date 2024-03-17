@@ -60,7 +60,7 @@ console.log(cooking);
           <Banner></Banner>
           <div className="mt-8 md:mt-12">
               <h1 className="text-[#150B2B] text-4xl font-semibold text-center">Our Recipes</h1>
-              <p className="text-[#150B2B99] text-center mt-6">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. <br /> Eget urna volutpat curabitur elementum mauris aenean neque. </p>
+              <p className="text-[#150B2B99] text-center mt-6"> Each recipe curated for our personalized cooking classes is meticulously crafted to inspire creativity and ignite passion in the kitchen. <br /> Our collection of recipes spans the culinary spectrum, offering something for every taste and occasion.</p>
           </div>
           <div className="w-full mt-8 lg:mt-12 grid gap-6 grid-cols-1 lg:grid-cols-12">
                   <Recipes recipes={recipes} handleWantToCook={handleWantToCook}></Recipes>
