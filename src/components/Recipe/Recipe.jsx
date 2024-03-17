@@ -19,8 +19,6 @@ const Recipe = ({recipe, handleWantToCook}) => {
 
                 <div>
                     <h4 className="text-[#282828] text-lg font-medium">Ingredients: {ingredients.length}</h4>
-                    <ul className="list-disc pl-4 text-[#878787] fira text-lg">
-                        {
                             ingredients.map((ing, idx) => <li key={idx}>{ing}</li>)
                         }
                     </ul>
